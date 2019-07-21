@@ -2,12 +2,11 @@
 //  PersonalityTestTests.swift
 //  PersonalityTestTests
 //
-//  Created by Mohammad Zulqarnain on 18/07/2019.
+//  Created by Mohammad Zulqarnain on 21/07/2019.
 //  Copyright © 2019 Mohammad Zulqarnain. All rights reserved.
 //
 
 import XCTest
-@testable import PersonalityTest
 
 class PersonalityTestTests: XCTestCase {
 

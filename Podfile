@@ -6,10 +6,11 @@ target 'PersonalityTest' do
 pod 'Firebase/Core'
 pod 'Firebase/Database'
   # Pods for PersonalityTest
-
+	
   target 'PersonalityTestTests' do
     inherit! :search_paths
     # Pods for testing
+pod 'Firebase/Database'
   end
 
   target 'PersonalityTestUITests' do
