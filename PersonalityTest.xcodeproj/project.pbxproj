@@ -19,9 +19,15 @@
 		66401B5622E45C2C0074C5F2 /* LoadingAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401B5422E45C2C0074C5F2 /* LoadingAnimationView.swift */; };
 		66401B5722E45C2C0074C5F2 /* LoadingAnimationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66401B5522E45C2C0074C5F2 /* LoadingAnimationView.xib */; };
 		66401B9F22E4A4400074C5F2 /* PersonalityTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401B9E22E4A4400074C5F2 /* PersonalityTestTests.swift */; };
-		66401BA722E4A4600074C5F2 /* PersonalityTest_SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401BA622E4A4600074C5F2 /* PersonalityTest_SplashViewController.swift */; };
-		66401BA922E4A5970074C5F2 /* PersonalityTest_LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401BA822E4A5970074C5F2 /* PersonalityTest_LoginViewController.swift */; };
-		66401BAB22E4A9460074C5F2 /* PersonalityTest_ReusableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401BAA22E4A9460074C5F2 /* PersonalityTest_ReusableViews.swift */; };
+		66401BA722E4A4600074C5F2 /* PersonalityTest_SplashViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401BA622E4A4600074C5F2 /* PersonalityTest_SplashViewControllerTest.swift */; };
+		66401BA922E4A5970074C5F2 /* PersonalityTest_LoginViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401BA822E4A5970074C5F2 /* PersonalityTest_LoginViewControllerTest.swift */; };
+		66401BAB22E4A9460074C5F2 /* PersonalityTest_ReusableViewsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401BAA22E4A9460074C5F2 /* PersonalityTest_ReusableViewsTest.swift */; };
+		66401BAD22E4AFCD0074C5F2 /* PersonalityTest_EnumsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401BAC22E4AFCD0074C5F2 /* PersonalityTest_EnumsTest.swift */; };
+		6640913522E4E34600BA92BE /* PersonalityQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6640913422E4E34600BA92BE /* PersonalityQuizViewController.swift */; };
+		6640913722E4E35C00BA92BE /* PersonalityQuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6640913622E4E35C00BA92BE /* PersonalityQuizModel.swift */; };
+		6640913922E4E38C00BA92BE /* PersonalityQuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6640913822E4E38C00BA92BE /* PersonalityQuizViewModel.swift */; };
+		6641C66E22E5A506005CA44D /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641C66B22E5A505005CA44D /* AlertView.swift */; };
+		6641C66F22E5A506005CA44D /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6641C66C22E5A506005CA44D /* AlertView.xib */; };
 		667EA2B322E06AA9007BEF5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667EA2B222E06AA9007BEF5E /* AppDelegate.swift */; };
 		667EA2B522E06AA9007BEF5E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667EA2B422E06AA9007BEF5E /* SplashViewController.swift */; };
 		667EA2B822E06AA9007BEF5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667EA2B622E06AA9007BEF5E /* Main.storyboard */; };
@@ -29,6 +35,16 @@
 		667EA2BD22E06AAA007BEF5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667EA2BB22E06AAA007BEF5E /* LaunchScreen.storyboard */; };
 		667EA2D322E06AAA007BEF5E /* PersonalityTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667EA2D222E06AAA007BEF5E /* PersonalityTestUITests.swift */; };
 		667EA2EA22E073BE007BEF5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 667EA2E922E073BE007BEF5E /* GoogleService-Info.plist */; };
+		66A06FFA22EB003100C98AA4 /* ConditionalQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A06FF922EB003100C98AA4 /* ConditionalQuestionView.swift */; };
+		66A06FFC22EB004500C98AA4 /* ConditionalQuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66A06FFB22EB004500C98AA4 /* ConditionalQuestionView.xib */; };
+		66A06FFF22EB025A00C98AA4 /* ChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A06FFD22EB025A00C98AA4 /* ChoiceTableViewCell.swift */; };
+		66A0700022EB025A00C98AA4 /* ChoiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66A06FFE22EB025A00C98AA4 /* ChoiceTableViewCell.xib */; };
+		66FF7A7D22E9FCB500CC7243 /* PersonalityTest_ExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF7A7C22E9FCB500CC7243 /* PersonalityTest_ExtensionsTest.swift */; };
+		66FF7A7F22EA055900CC7243 /* PersonalityTest_PersonalityQuizViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF7A7E22EA055900CC7243 /* PersonalityTest_PersonalityQuizViewControllerTest.swift */; };
+		66FF7A8222EA093700CC7243 /* QuestionAnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF7A8022EA093700CC7243 /* QuestionAnswerTableViewCell.swift */; };
+		66FF7A8322EA093700CC7243 /* QuestionAnswerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66FF7A8122EA093700CC7243 /* QuestionAnswerTableViewCell.xib */; };
+		66FF7A8522EA0D3300CC7243 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF7A8422EA0D3300CC7243 /* TableView.swift */; };
+		66FF7A8722EA0D6700CC7243 /* TableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66FF7A8622EA0D6700CC7243 /* TableView.xib */; };
 		DA78C63FB6D17B2C5176DFA6 /* libPods-PersonalityTestUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 299A87072A458DFC50CBEA62 /* libPods-PersonalityTestUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -66,9 +82,15 @@
 		66401B9C22E4A4400074C5F2 /* PersonalityTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalityTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66401B9E22E4A4400074C5F2 /* PersonalityTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTestTests.swift; sourceTree = "<group>"; };
 		66401BA022E4A4400074C5F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66401BA622E4A4600074C5F2 /* PersonalityTest_SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalityTest_SplashViewController.swift; sourceTree = "<group>"; };
-		66401BA822E4A5970074C5F2 /* PersonalityTest_LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_LoginViewController.swift; sourceTree = "<group>"; };
-		66401BAA22E4A9460074C5F2 /* PersonalityTest_ReusableViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_ReusableViews.swift; sourceTree = "<group>"; };
+		66401BA622E4A4600074C5F2 /* PersonalityTest_SplashViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalityTest_SplashViewControllerTest.swift; sourceTree = "<group>"; };
+		66401BA822E4A5970074C5F2 /* PersonalityTest_LoginViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_LoginViewControllerTest.swift; sourceTree = "<group>"; };
+		66401BAA22E4A9460074C5F2 /* PersonalityTest_ReusableViewsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_ReusableViewsTest.swift; sourceTree = "<group>"; };
+		66401BAC22E4AFCD0074C5F2 /* PersonalityTest_EnumsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_EnumsTest.swift; sourceTree = "<group>"; };
+		6640913422E4E34600BA92BE /* PersonalityQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityQuizViewController.swift; sourceTree = "<group>"; };
+		6640913622E4E35C00BA92BE /* PersonalityQuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityQuizModel.swift; sourceTree = "<group>"; };
+		6640913822E4E38C00BA92BE /* PersonalityQuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityQuizViewModel.swift; sourceTree = "<group>"; };
+		6641C66B22E5A505005CA44D /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		6641C66C22E5A506005CA44D /* AlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		667EA2AF22E06AA9007BEF5E /* PersonalityTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalityTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		667EA2B222E06AA9007BEF5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		667EA2B422E06AA9007BEF5E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +102,16 @@
 		667EA2D222E06AAA007BEF5E /* PersonalityTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTestUITests.swift; sourceTree = "<group>"; };
 		667EA2D422E06AAA007BEF5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		667EA2E922E073BE007BEF5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		66A06FF922EB003100C98AA4 /* ConditionalQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalQuestionView.swift; sourceTree = "<group>"; };
+		66A06FFB22EB004500C98AA4 /* ConditionalQuestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConditionalQuestionView.xib; sourceTree = "<group>"; };
+		66A06FFD22EB025A00C98AA4 /* ChoiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTableViewCell.swift; sourceTree = "<group>"; };
+		66A06FFE22EB025A00C98AA4 /* ChoiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoiceTableViewCell.xib; sourceTree = "<group>"; };
+		66FF7A7C22E9FCB500CC7243 /* PersonalityTest_ExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_ExtensionsTest.swift; sourceTree = "<group>"; };
+		66FF7A7E22EA055900CC7243 /* PersonalityTest_PersonalityQuizViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_PersonalityQuizViewControllerTest.swift; sourceTree = "<group>"; };
+		66FF7A8022EA093700CC7243 /* QuestionAnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerTableViewCell.swift; sourceTree = "<group>"; };
+		66FF7A8122EA093700CC7243 /* QuestionAnswerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionAnswerTableViewCell.xib; sourceTree = "<group>"; };
+		66FF7A8422EA0D3300CC7243 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		66FF7A8622EA0D6700CC7243 /* TableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableView.xib; sourceTree = "<group>"; };
 		7EB0A4A59851CBBF028301A9 /* Pods-PersonalityTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalityTest.release.xcconfig"; path = "Target Support Files/Pods-PersonalityTest/Pods-PersonalityTest.release.xcconfig"; sourceTree = "<group>"; };
 		9CDB0534E432D6E55AA5FC5E /* Pods-PersonalityTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalityTestTests.release.xcconfig"; path = "Target Support Files/Pods-PersonalityTestTests/Pods-PersonalityTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		AAC6A9D7AE46AF47AA8D8813 /* libPods-PersonalityTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PersonalityTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,27 +169,16 @@
 		66401B9D22E4A4400074C5F2 /* PersonalityTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				66401BA622E4A4600074C5F2 /* PersonalityTest_SplashViewController.swift */,
-				66401BA822E4A5970074C5F2 /* PersonalityTest_LoginViewController.swift */,
-				66401BAA22E4A9460074C5F2 /* PersonalityTest_ReusableViews.swift */,
+				66401BA622E4A4600074C5F2 /* PersonalityTest_SplashViewControllerTest.swift */,
+				66401BA822E4A5970074C5F2 /* PersonalityTest_LoginViewControllerTest.swift */,
+				66401BAA22E4A9460074C5F2 /* PersonalityTest_ReusableViewsTest.swift */,
 				66401B9E22E4A4400074C5F2 /* PersonalityTestTests.swift */,
 				66401BA022E4A4400074C5F2 /* Info.plist */,
+				66401BAC22E4AFCD0074C5F2 /* PersonalityTest_EnumsTest.swift */,
+				66FF7A7C22E9FCB500CC7243 /* PersonalityTest_ExtensionsTest.swift */,
+				66FF7A7E22EA055900CC7243 /* PersonalityTest_PersonalityQuizViewControllerTest.swift */,
 			);
 			path = PersonalityTestTests;
-			sourceTree = "<group>";
-		};
-		666B46EB22E3C22500AD874F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		666B46EC22E3C22700AD874F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		666B46ED22E3C22900AD874F /* Controller */ = {
@@ -166,13 +187,6 @@
 				667EA2B422E06AA9007BEF5E /* SplashViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		666B46EE22E3C23700AD874F /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		666B46EF22E3C42800AD874F /* Controller */ = {
@@ -207,6 +221,7 @@
 		666B46F322E3C43000AD874F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				6640913822E4E38C00BA92BE /* PersonalityQuizViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -214,6 +229,7 @@
 		666B46F422E3C43000AD874F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6640913622E4E35C00BA92BE /* PersonalityQuizModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,43 +237,9 @@
 		666B46F522E3C43000AD874F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6640913422E4E34600BA92BE /* PersonalityQuizViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		666B46F622E3C43000AD874F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		666B46F722E3C43F00AD874F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		666B46F822E3C43F00AD874F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		666B46F922E3C43F00AD874F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		666B46FA22E3C43F00AD874F /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		667EA2A622E06AA9007BEF5E = {
@@ -292,7 +274,6 @@
 				667EA2E722E07396007BEF5E /* Modules */,
 				667EA2E622E07338007BEF5E /* Network Classes */,
 				667EA2E522E07335007BEF5E /* Utility Classes */,
-				667EA2E422E07333007BEF5E /* Eums */,
 				667EA2B222E06AA9007BEF5E /* AppDelegate.swift */,
 				667EA2B622E06AA9007BEF5E /* Main.storyboard */,
 				667EA2B922E06AAA007BEF5E /* Assets.xcassets */,
@@ -311,26 +292,14 @@
 			path = PersonalityTestUITests;
 			sourceTree = "<group>";
 		};
-		667EA2E022E07329007BEF5E /* Thanks Screen */ = {
-			isa = PBXGroup;
-			children = (
-				666B46F822E3C43F00AD874F /* Controller */,
-				666B46F922E3C43F00AD874F /* Model */,
-				666B46F722E3C43F00AD874F /* View */,
-				666B46FA22E3C43F00AD874F /* ViewModel */,
-			);
-			path = "Thanks Screen";
-			sourceTree = "<group>";
-		};
-		667EA2E122E0732C007BEF5E /* Registration Screen */ = {
+		667EA2E122E0732C007BEF5E /* PersonalityQuizScreen */ = {
 			isa = PBXGroup;
 			children = (
 				666B46F522E3C43000AD874F /* Controller */,
 				666B46F422E3C43000AD874F /* Model */,
-				666B46F622E3C43000AD874F /* View */,
 				666B46F322E3C43000AD874F /* ViewModel */,
 			);
-			path = "Registration Screen";
+			path = PersonalityQuizScreen;
 			sourceTree = "<group>";
 		};
 		667EA2E222E0732E007BEF5E /* Login Screen */ = {
@@ -347,19 +316,9 @@
 		667EA2E322E07330007BEF5E /* Splash Screen */ = {
 			isa = PBXGroup;
 			children = (
-				666B46EB22E3C22500AD874F /* Model */,
-				666B46EC22E3C22700AD874F /* View */,
-				666B46EE22E3C23700AD874F /* ViewModel */,
 				666B46ED22E3C22900AD874F /* Controller */,
 			);
 			path = "Splash Screen";
-			sourceTree = "<group>";
-		};
-		667EA2E422E07333007BEF5E /* Eums */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Eums;
 			sourceTree = "<group>";
 		};
 		667EA2E522E07335007BEF5E /* Utility Classes */ = {
@@ -381,8 +340,7 @@
 			children = (
 				667EA2E322E07330007BEF5E /* Splash Screen */,
 				667EA2E222E0732E007BEF5E /* Login Screen */,
-				667EA2E122E0732C007BEF5E /* Registration Screen */,
-				667EA2E022E07329007BEF5E /* Thanks Screen */,
+				667EA2E122E0732C007BEF5E /* PersonalityQuizScreen */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -398,12 +356,22 @@
 		667EA2EB22E07647007BEF5E /* Reusable Views */ = {
 			isa = PBXGroup;
 			children = (
+				6641C66B22E5A505005CA44D /* AlertView.swift */,
+				6641C66C22E5A506005CA44D /* AlertView.xib */,
 				66401B5422E45C2C0074C5F2 /* LoadingAnimationView.swift */,
 				66401B5522E45C2C0074C5F2 /* LoadingAnimationView.xib */,
 				66401B4422E4294F0074C5F2 /* TextfieldView.swift */,
 				66401B4622E4297D0074C5F2 /* TextfieldView.xib */,
 				66401B4E22E44DAA0074C5F2 /* ButtonView.swift */,
 				66401B5222E44E8B0074C5F2 /* ButtonView.xib */,
+				66FF7A8022EA093700CC7243 /* QuestionAnswerTableViewCell.swift */,
+				66FF7A8122EA093700CC7243 /* QuestionAnswerTableViewCell.xib */,
+				66FF7A8422EA0D3300CC7243 /* TableView.swift */,
+				66FF7A8622EA0D6700CC7243 /* TableView.xib */,
+				66A06FF922EB003100C98AA4 /* ConditionalQuestionView.swift */,
+				66A06FFB22EB004500C98AA4 /* ConditionalQuestionView.xib */,
+				66A06FFD22EB025A00C98AA4 /* ChoiceTableViewCell.swift */,
+				66A06FFE22EB025A00C98AA4 /* ChoiceTableViewCell.xib */,
 			);
 			path = "Reusable Views";
 			sourceTree = "<group>";
@@ -445,6 +413,7 @@
 				66401B9822E4A4400074C5F2 /* Sources */,
 				66401B9922E4A4400074C5F2 /* Frameworks */,
 				66401B9A22E4A4400074C5F2 /* Resources */,
+				18ED6660AC997C8668476EC7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -464,6 +433,7 @@
 				667EA2AB22E06AA9007BEF5E /* Sources */,
 				667EA2AC22E06AA9007BEF5E /* Frameworks */,
 				667EA2AD22E06AA9007BEF5E /* Resources */,
+				EF2B2929FC690CAE552980E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -548,13 +518,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66FF7A8322EA093700CC7243 /* QuestionAnswerTableViewCell.xib in Resources */,
 				66401B5722E45C2C0074C5F2 /* LoadingAnimationView.xib in Resources */,
+				6641C66F22E5A506005CA44D /* AlertView.xib in Resources */,
 				667EA2BD22E06AAA007BEF5E /* LaunchScreen.storyboard in Resources */,
 				667EA2EA22E073BE007BEF5E /* GoogleService-Info.plist in Resources */,
 				66401B5322E44E8B0074C5F2 /* ButtonView.xib in Resources */,
 				667EA2BA22E06AAA007BEF5E /* Assets.xcassets in Resources */,
+				66FF7A8722EA0D6700CC7243 /* TableView.xib in Resources */,
 				667EA2B822E06AA9007BEF5E /* Main.storyboard in Resources */,
 				66401B4722E4297D0074C5F2 /* TextfieldView.xib in Resources */,
+				66A0700022EB025A00C98AA4 /* ChoiceTableViewCell.xib in Resources */,
+				66A06FFC22EB004500C98AA4 /* ConditionalQuestionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +563,44 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18ED6660AC997C8668476EC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonalityTestTests/Pods-PersonalityTestTests-resources.sh",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAnonymousAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseEmailAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAnonymousAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseEmailAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonalityTestTests/Pods-PersonalityTestTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		63E52721B9AA97E2549C854F /* [CP] Check Pods Manifest.lock */ = {
@@ -634,6 +647,44 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EF2B2929FC690CAE552980E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonalityTest/Pods-PersonalityTest-resources.sh",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAnonymousAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseEmailAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAnonymousAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseEmailAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonalityTest/Pods-PersonalityTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -641,10 +692,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66401BAB22E4A9460074C5F2 /* PersonalityTest_ReusableViews.swift in Sources */,
-				66401BA722E4A4600074C5F2 /* PersonalityTest_SplashViewController.swift in Sources */,
+				66401BAD22E4AFCD0074C5F2 /* PersonalityTest_EnumsTest.swift in Sources */,
+				66401BAB22E4A9460074C5F2 /* PersonalityTest_ReusableViewsTest.swift in Sources */,
+				66401BA722E4A4600074C5F2 /* PersonalityTest_SplashViewControllerTest.swift in Sources */,
 				66401B9F22E4A4400074C5F2 /* PersonalityTestTests.swift in Sources */,
-				66401BA922E4A5970074C5F2 /* PersonalityTest_LoginViewController.swift in Sources */,
+				66FF7A7F22EA055900CC7243 /* PersonalityTest_PersonalityQuizViewControllerTest.swift in Sources */,
+				66401BA922E4A5970074C5F2 /* PersonalityTest_LoginViewControllerTest.swift in Sources */,
+				66FF7A7D22E9FCB500CC7243 /* PersonalityTest_ExtensionsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,11 +706,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6640913522E4E34600BA92BE /* PersonalityQuizViewController.swift in Sources */,
+				66A06FFA22EB003100C98AA4 /* ConditionalQuestionView.swift in Sources */,
+				66A06FFF22EB025A00C98AA4 /* ChoiceTableViewCell.swift in Sources */,
 				66401B4A22E42DBA0074C5F2 /* Extensions.swift in Sources */,
 				66401B4322E425EF0074C5F2 /* LoginViewController.swift in Sources */,
+				66FF7A8522EA0D3300CC7243 /* TableView.swift in Sources */,
 				667EA2B522E06AA9007BEF5E /* SplashViewController.swift in Sources */,
+				6640913922E4E38C00BA92BE /* PersonalityQuizViewModel.swift in Sources */,
 				66401B4522E4294F0074C5F2 /* TextfieldView.swift in Sources */,
+				6640913722E4E35C00BA92BE /* PersonalityQuizModel.swift in Sources */,
+				66FF7A8222EA093700CC7243 /* QuestionAnswerTableViewCell.swift in Sources */,
 				66401B4D22E42E830074C5F2 /* Enums.swift in Sources */,
+				6641C66E22E5A506005CA44D /* AlertView.swift in Sources */,
 				667EA2B322E06AA9007BEF5E /* AppDelegate.swift in Sources */,
 				66401B5622E45C2C0074C5F2 /* LoadingAnimationView.swift in Sources */,
 				66401B4F22E44DAA0074C5F2 /* ButtonView.swift in Sources */,
@@ -876,7 +938,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf.PersonalityTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -895,7 +957,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf.PersonalityTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

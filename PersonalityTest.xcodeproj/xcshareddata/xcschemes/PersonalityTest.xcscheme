@@ -29,36 +29,6 @@
       codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "667EA2CD22E06AAA007BEF5E"
-               BuildableName = "PersonalityTestUITests.xctest"
-               BlueprintName = "PersonalityTestUITests"
-               ReferencedContainer = "container:PersonalityTest.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "66401B8922E49DA70074C5F2"
-               BuildableName = "PersonalityTestUnitTests.xctest"
-               BlueprintName = "PersonalityTestUnitTests"
-               ReferencedContainer = "container:PersonalityTest.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "66401B9B22E4A4400074C5F2"
-               BuildableName = "PersonalityTestTests.xctest"
-               BlueprintName = "PersonalityTestTests"
-               ReferencedContainer = "container:PersonalityTest.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

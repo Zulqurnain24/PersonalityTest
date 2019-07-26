@@ -12,7 +12,7 @@ import Firebase
 class SplashViewController: UIViewController {
 
     @IBOutlet weak var splashAnimationViewHolder: UIView!
-    let splashAnimationView = Bundle.main.loadNibNamed("LoadingAnimationView", owner: self, options: nil)?.last as! LoadingAnimationView
+    let splashAnimationView = Bundle.main.loadNibNamed(Nibs.loadingAnimationView.rawValue, owner: self, options: nil)?.last as! LoadingAnimationView
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class SplashViewController: UIViewController {
     }
 
     func setupView() {
-        self.view.accessibilityIdentifier = "SplashViewController"
+        self.view.accessibilityIdentifier = AccessibilityIdentifier.splashViewController.rawValue
         guard self.splashAnimationViewHolder != nil else { return }
         splashAnimationViewHolder.addSubview(splashAnimationView)
        

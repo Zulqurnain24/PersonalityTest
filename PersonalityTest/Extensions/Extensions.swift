@@ -6,7 +6,7 @@
 //  Copyright © 2019 Mohammad Zulqarnain. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension String {
 
@@ -21,5 +21,18 @@ extension String {
         }
         
         return NSPredicate(format: format, regex).evaluate(with: self)
+    }
+    
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
