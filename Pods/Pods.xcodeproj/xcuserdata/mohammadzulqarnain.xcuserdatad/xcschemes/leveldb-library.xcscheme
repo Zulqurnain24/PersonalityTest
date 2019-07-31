@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AEFAE0741DC7BE25FA28A7DC103305EA"
+               BlueprintIdentifier = "E3B935E863E65CD084B74724FC731846"
                BuildableName = "libleveldb-library.a"
                BlueprintName = "leveldb-library"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -15,7 +15,7 @@ class PersonalityTest_LoginViewControllerTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: StringConstants.storyboardName.rawValue, bundle: nil)
         sut = mainStoryboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController
 
     }

@@ -19,12 +19,15 @@ class ButtonView: UIView {
         // Initialization code
     }
     
-    func configure(title: String, withAccessibilityIdentifier: String, completionHandler: (() -> Void)? = nil) {
+    func configure(title: String, withAccessibilityIdentifier: String, color: UIColor? = nil, completionHandler: (() -> Void)? = nil) {
         button.layer.cornerRadius = 10
         button.clipsToBounds = true
         accessibilityIdentifier = withAccessibilityIdentifier
         button.setTitle(title, for: .normal)
-        guard buttonCallback != nil else { return }
+        if color != nil {
+            button.backgroundColor = color
+        }
+        guard completionHandler != nil else { return }
         self.buttonCallback = completionHandler
     }
 

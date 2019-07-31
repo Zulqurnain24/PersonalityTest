@@ -14,7 +14,7 @@ class PersonalityTest_SplashViewControllerTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        sut = UIStoryboard(name: "Main", bundle: nil)
+        sut = UIStoryboard(name: StringConstants.storyboardName.rawValue, bundle: nil)
             .instantiateInitialViewController() as? SplashViewController
 
     }

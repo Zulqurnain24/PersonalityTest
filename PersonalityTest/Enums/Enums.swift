@@ -31,6 +31,12 @@ enum StringConstants: String {
     case logOutButtonTitle = "Logout"
     case loginButtonTitle = "Login"
     case signupButtonTitle = "Signup"
+    case personalityQuizButtonView = "Personality Quiz"
+    case popoverContentViewControllerTitle = "Optional Question"
+    case submitButtonTitle = "Submit"
+    case personalityQuizViewControllerTitle = "-Personality Quiz-"
+    case storyboardName = "Main"
+    case noConnectionToInternet = "There is no Connection to internet. Please restore connection to continue"
 }
 
 //NumericConstants Enum
@@ -38,6 +44,7 @@ enum NumericConstants: Double {
     typealias RawValue = Double
     
     case splashAnimationTime = 3.0
+    case questionCellDefaultHeight = 316
 }
 
 //ValidityType Enum
@@ -63,8 +70,13 @@ enum Nibs: String {
     case alertView = "AlertView"
     case loadingAnimationView = "LoadingAnimationView"
     case tableView = "TableView"
+    case questionAnswerTableViewCell = "QuestionAnswerTableViewCell"
+    case conditionalQuestionView = "ConditionalQuestionView"
+    case choiceTableViewCell = "ChoiceTableViewCell"
+    case customLabelView = "CustomLabelView"
 }
 
+//AccessibilityIdentifier Enum
 enum AccessibilityIdentifier: String {
     typealias RawValue = String
     
@@ -82,4 +94,21 @@ enum AccessibilityIdentifier: String {
     case logOutButtonView = "LogOutButtonView"
     case forgotPasswordButtonView = "ForgotPasswordButtonView"
     case signOutButtonView = "SignOutButtonView"
+    case personalityQuizButtonView = "PersonalityQuizButtonView"
+    case submitButtonView = "SubmitButtonView"
+    case conditionalQuestionView = "ConditionalQuestionView"
+    case questionAnswerTableViewCell = "QuestionAnswerTableViewCell"
+    case popoverContentViewController = "PopoverContentViewController"
+    case choiceTableViewCell = "ChoiceTableViewCell"
+    
+}
+
+//QuestionCategory Enum
+enum QuestionCategory: String, Codable {
+    typealias RawValue = String
+    
+    case hard_fact = "hard_fact"
+    case lifestyle = "lifestyle"
+    case introversion = "introversion"
+    case passion = "passion"
 }

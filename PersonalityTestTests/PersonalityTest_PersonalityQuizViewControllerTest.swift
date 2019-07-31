@@ -14,7 +14,7 @@ class PersonalityTest_PersonalityQuizViewControllerTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: StringConstants.storyboardName.rawValue, bundle: nil)
         sut = mainStoryboard.instantiateViewController(withIdentifier: "PersonalityQuizViewController") as? PersonalityQuizViewController
         
     }
@@ -27,6 +27,18 @@ class PersonalityTest_PersonalityQuizViewControllerTest: XCTestCase {
     func testExample() {
         
         sut.viewDidLoad()
+        sut.setupViews()
+        sut.viewWillAppear(true)
+        let promise = expectation(description: "initialize PersonalityQuizQuestionListViewModel Object")
+
+        sut.populateUIFromDB({
+          promise.fulfill()
+        })
+        wait(for: [promise], timeout: 5)
+        self.sut.conditionalAnswer(questionNumber: 2, optionalAnswerString: "very important")
+        self.sut.selectOption(questionNumber: 2, optionNumber: 3, answerString: "very important")
+        XCTAssertEqual(self.sut.personalityQuizQuestionListViewModel.questionList.questions[2].question_type.selectedOption, 3)
+        sut.showPopover(questionNumber: 2, questionString: "Yes", range: NSRange(location: 20, length: 5))
     }
 
     func testPerformanceExample() {

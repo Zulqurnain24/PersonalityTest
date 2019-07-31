@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3A5A12202ECE8863607C2151 /* libPods-PersonalityTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55718D8ADB23CFBC99102495 /* libPods-PersonalityTestTests.a */; };
 		405D9FA86A039A8F711AA4CF /* libPods-PersonalityTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC6A9D7AE46AF47AA8D8813 /* libPods-PersonalityTest.a */; };
+		6638A78D22EE292A006E9C6B /* CustomLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6638A78C22EE292A006E9C6B /* CustomLabelView.swift */; };
+		6638A78F22EE293F006E9C6B /* CustomLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6638A78E22EE293F006E9C6B /* CustomLabelView.xib */; };
 		66401B4322E425EF0074C5F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401B4222E425EF0074C5F2 /* LoginViewController.swift */; };
 		66401B4522E4294F0074C5F2 /* TextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401B4422E4294F0074C5F2 /* TextfieldView.swift */; };
 		66401B4722E4297D0074C5F2 /* TextfieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66401B4622E4297D0074C5F2 /* TextfieldView.xib */; };
@@ -24,10 +26,15 @@
 		66401BAB22E4A9460074C5F2 /* PersonalityTest_ReusableViewsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401BAA22E4A9460074C5F2 /* PersonalityTest_ReusableViewsTest.swift */; };
 		66401BAD22E4AFCD0074C5F2 /* PersonalityTest_EnumsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66401BAC22E4AFCD0074C5F2 /* PersonalityTest_EnumsTest.swift */; };
 		6640913522E4E34600BA92BE /* PersonalityQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6640913422E4E34600BA92BE /* PersonalityQuizViewController.swift */; };
-		6640913722E4E35C00BA92BE /* PersonalityQuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6640913622E4E35C00BA92BE /* PersonalityQuizModel.swift */; };
-		6640913922E4E38C00BA92BE /* PersonalityQuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6640913822E4E38C00BA92BE /* PersonalityQuizViewModel.swift */; };
+		6640913722E4E35C00BA92BE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6640913622E4E35C00BA92BE /* Question.swift */; };
 		6641C66E22E5A506005CA44D /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6641C66B22E5A505005CA44D /* AlertView.swift */; };
 		6641C66F22E5A506005CA44D /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6641C66C22E5A506005CA44D /* AlertView.xib */; };
+		6665F6CB22F1673F00BBBA6A /* PersonalityTest_OptionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6665F6CA22F1673F00BBBA6A /* PersonalityTest_OptionTest.swift */; };
+		6665F6CD22F1685E00BBBA6A /* PersonalityTest_QuestionTypeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6665F6CC22F1685E00BBBA6A /* PersonalityTest_QuestionTypeTest.swift */; };
+		6665F6CF22F16F1E00BBBA6A /* PersonalityTest_PersonalityQuizQuestionListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6665F6CE22F16F1E00BBBA6A /* PersonalityTest_PersonalityQuizQuestionListViewModelTest.swift */; };
+		6665F6D222F18F2200BBBA6A /* NetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6665F6D122F18F2200BBBA6A /* NetworkUtility.swift */; };
+		6665F6D422F1921500BBBA6A /* PersonalityTest_NetworkUtilityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6665F6D322F1921500BBBA6A /* PersonalityTest_NetworkUtilityTest.swift */; };
+		6677254A22ECE55700FA1F80 /* QuestionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677254922ECE55700FA1F80 /* QuestionList.swift */; };
 		667EA2B322E06AA9007BEF5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667EA2B222E06AA9007BEF5E /* AppDelegate.swift */; };
 		667EA2B522E06AA9007BEF5E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667EA2B422E06AA9007BEF5E /* SplashViewController.swift */; };
 		667EA2B822E06AA9007BEF5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667EA2B622E06AA9007BEF5E /* Main.storyboard */; };
@@ -35,10 +42,23 @@
 		667EA2BD22E06AAA007BEF5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667EA2BB22E06AAA007BEF5E /* LaunchScreen.storyboard */; };
 		667EA2D322E06AAA007BEF5E /* PersonalityTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667EA2D222E06AAA007BEF5E /* PersonalityTestUITests.swift */; };
 		667EA2EA22E073BE007BEF5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 667EA2E922E073BE007BEF5E /* GoogleService-Info.plist */; };
+		668712DE22F03E7E0042B46D /* PersonalityTest_PopoverContentViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668712DD22F03E7E0042B46D /* PersonalityTest_PopoverContentViewControllerTest.swift */; };
+		668712E022F043640042B46D /* PersonalityTest_ChoiceTableViewCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668712DF22F043640042B46D /* PersonalityTest_ChoiceTableViewCellTest.swift */; };
+		668712E222F04BC70042B46D /* PersonalityTest_QuestionAnswerTableViewCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668712E122F04BC70042B46D /* PersonalityTest_QuestionAnswerTableViewCellTest.swift */; };
+		668712E522F04DF50042B46D /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 668712E422F04DF50042B46D /* questions.json */; };
 		66A06FFA22EB003100C98AA4 /* ConditionalQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A06FF922EB003100C98AA4 /* ConditionalQuestionView.swift */; };
 		66A06FFC22EB004500C98AA4 /* ConditionalQuestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66A06FFB22EB004500C98AA4 /* ConditionalQuestionView.xib */; };
 		66A06FFF22EB025A00C98AA4 /* ChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A06FFD22EB025A00C98AA4 /* ChoiceTableViewCell.swift */; };
 		66A0700022EB025A00C98AA4 /* ChoiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66A06FFE22EB025A00C98AA4 /* ChoiceTableViewCell.xib */; };
+		66B76E0022ED7EA0000BB374 /* PersonalityQuizDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B76DFF22ED7EA0000BB374 /* PersonalityQuizDataManager.swift */; };
+		66B76E0522ED8702000BB374 /* PersonalityQuizQuestionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B76E0422ED8701000BB374 /* PersonalityQuizQuestionListViewModel.swift */; };
+		66B76E0722ED9745000BB374 /* PopoverContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B76E0622ED9745000BB374 /* PopoverContentViewController.swift */; };
+		66B76E0922ED9ABE000BB374 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B76E0822ED9ABE000BB374 /* Answer.swift */; };
+		66C719EE22F0CD390043814F /* PersonalityTest_AnswerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C719ED22F0CD390043814F /* PersonalityTest_AnswerTest.swift */; };
+		66C719F022F0CF470043814F /* PersonalityTest_ConditionalQuestionViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C719EF22F0CF470043814F /* PersonalityTest_ConditionalQuestionViewTest.swift */; };
+		66C719F222F0DADD0043814F /* PersonalityTest_QuestionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C719F122F0DADD0043814F /* PersonalityTest_QuestionTest.swift */; };
+		66C719F422F0DFBD0043814F /* PersonalityTest_QuestionListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C719F322F0DFBD0043814F /* PersonalityTest_QuestionListTest.swift */; };
+		66C719F622F0E5430043814F /* PersonalityTest_DataManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C719F522F0E5430043814F /* PersonalityTest_DataManagerTest.swift */; };
 		66FF7A7D22E9FCB500CC7243 /* PersonalityTest_ExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF7A7C22E9FCB500CC7243 /* PersonalityTest_ExtensionsTest.swift */; };
 		66FF7A7F22EA055900CC7243 /* PersonalityTest_PersonalityQuizViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF7A7E22EA055900CC7243 /* PersonalityTest_PersonalityQuizViewControllerTest.swift */; };
 		66FF7A8222EA093700CC7243 /* QuestionAnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF7A8022EA093700CC7243 /* QuestionAnswerTableViewCell.swift */; };
@@ -70,6 +90,8 @@
 		299A87072A458DFC50CBEA62 /* libPods-PersonalityTestUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PersonalityTestUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A22ACFE5ED0A0B6B1D1369E /* Pods-PersonalityTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalityTest.debug.xcconfig"; path = "Target Support Files/Pods-PersonalityTest/Pods-PersonalityTest.debug.xcconfig"; sourceTree = "<group>"; };
 		55718D8ADB23CFBC99102495 /* libPods-PersonalityTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PersonalityTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6638A78C22EE292A006E9C6B /* CustomLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabelView.swift; sourceTree = "<group>"; };
+		6638A78E22EE293F006E9C6B /* CustomLabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomLabelView.xib; sourceTree = "<group>"; };
 		66401B4222E425EF0074C5F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		66401B4422E4294F0074C5F2 /* TextfieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldView.swift; sourceTree = "<group>"; };
 		66401B4622E4297D0074C5F2 /* TextfieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextfieldView.xib; sourceTree = "<group>"; };
@@ -87,10 +109,15 @@
 		66401BAA22E4A9460074C5F2 /* PersonalityTest_ReusableViewsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_ReusableViewsTest.swift; sourceTree = "<group>"; };
 		66401BAC22E4AFCD0074C5F2 /* PersonalityTest_EnumsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_EnumsTest.swift; sourceTree = "<group>"; };
 		6640913422E4E34600BA92BE /* PersonalityQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityQuizViewController.swift; sourceTree = "<group>"; };
-		6640913622E4E35C00BA92BE /* PersonalityQuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityQuizModel.swift; sourceTree = "<group>"; };
-		6640913822E4E38C00BA92BE /* PersonalityQuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityQuizViewModel.swift; sourceTree = "<group>"; };
+		6640913622E4E35C00BA92BE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		6641C66B22E5A505005CA44D /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		6641C66C22E5A506005CA44D /* AlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		6665F6CA22F1673F00BBBA6A /* PersonalityTest_OptionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_OptionTest.swift; sourceTree = "<group>"; };
+		6665F6CC22F1685E00BBBA6A /* PersonalityTest_QuestionTypeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_QuestionTypeTest.swift; sourceTree = "<group>"; };
+		6665F6CE22F16F1E00BBBA6A /* PersonalityTest_PersonalityQuizQuestionListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_PersonalityQuizQuestionListViewModelTest.swift; sourceTree = "<group>"; };
+		6665F6D122F18F2200BBBA6A /* NetworkUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtility.swift; sourceTree = "<group>"; };
+		6665F6D322F1921500BBBA6A /* PersonalityTest_NetworkUtilityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_NetworkUtilityTest.swift; sourceTree = "<group>"; };
+		6677254922ECE55700FA1F80 /* QuestionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionList.swift; sourceTree = "<group>"; };
 		667EA2AF22E06AA9007BEF5E /* PersonalityTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalityTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		667EA2B222E06AA9007BEF5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		667EA2B422E06AA9007BEF5E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -102,10 +129,23 @@
 		667EA2D222E06AAA007BEF5E /* PersonalityTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTestUITests.swift; sourceTree = "<group>"; };
 		667EA2D422E06AAA007BEF5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		667EA2E922E073BE007BEF5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		668712DD22F03E7E0042B46D /* PersonalityTest_PopoverContentViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_PopoverContentViewControllerTest.swift; sourceTree = "<group>"; };
+		668712DF22F043640042B46D /* PersonalityTest_ChoiceTableViewCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_ChoiceTableViewCellTest.swift; sourceTree = "<group>"; };
+		668712E122F04BC70042B46D /* PersonalityTest_QuestionAnswerTableViewCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_QuestionAnswerTableViewCellTest.swift; sourceTree = "<group>"; };
+		668712E422F04DF50042B46D /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 		66A06FF922EB003100C98AA4 /* ConditionalQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalQuestionView.swift; sourceTree = "<group>"; };
 		66A06FFB22EB004500C98AA4 /* ConditionalQuestionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConditionalQuestionView.xib; sourceTree = "<group>"; };
 		66A06FFD22EB025A00C98AA4 /* ChoiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTableViewCell.swift; sourceTree = "<group>"; };
 		66A06FFE22EB025A00C98AA4 /* ChoiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoiceTableViewCell.xib; sourceTree = "<group>"; };
+		66B76DFF22ED7EA0000BB374 /* PersonalityQuizDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityQuizDataManager.swift; sourceTree = "<group>"; };
+		66B76E0422ED8701000BB374 /* PersonalityQuizQuestionListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalityQuizQuestionListViewModel.swift; sourceTree = "<group>"; };
+		66B76E0622ED9745000BB374 /* PopoverContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverContentViewController.swift; sourceTree = "<group>"; };
+		66B76E0822ED9ABE000BB374 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		66C719ED22F0CD390043814F /* PersonalityTest_AnswerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_AnswerTest.swift; sourceTree = "<group>"; };
+		66C719EF22F0CF470043814F /* PersonalityTest_ConditionalQuestionViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_ConditionalQuestionViewTest.swift; sourceTree = "<group>"; };
+		66C719F122F0DADD0043814F /* PersonalityTest_QuestionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_QuestionTest.swift; sourceTree = "<group>"; };
+		66C719F322F0DFBD0043814F /* PersonalityTest_QuestionListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_QuestionListTest.swift; sourceTree = "<group>"; };
+		66C719F522F0E5430043814F /* PersonalityTest_DataManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_DataManagerTest.swift; sourceTree = "<group>"; };
 		66FF7A7C22E9FCB500CC7243 /* PersonalityTest_ExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_ExtensionsTest.swift; sourceTree = "<group>"; };
 		66FF7A7E22EA055900CC7243 /* PersonalityTest_PersonalityQuizViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityTest_PersonalityQuizViewControllerTest.swift; sourceTree = "<group>"; };
 		66FF7A8022EA093700CC7243 /* QuestionAnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerTableViewCell.swift; sourceTree = "<group>"; };
@@ -169,6 +209,7 @@
 		66401B9D22E4A4400074C5F2 /* PersonalityTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				668712E322F04DDB0042B46D /* Datamanager */,
 				66401BA622E4A4600074C5F2 /* PersonalityTest_SplashViewControllerTest.swift */,
 				66401BA822E4A5970074C5F2 /* PersonalityTest_LoginViewControllerTest.swift */,
 				66401BAA22E4A9460074C5F2 /* PersonalityTest_ReusableViewsTest.swift */,
@@ -177,8 +218,27 @@
 				66401BAC22E4AFCD0074C5F2 /* PersonalityTest_EnumsTest.swift */,
 				66FF7A7C22E9FCB500CC7243 /* PersonalityTest_ExtensionsTest.swift */,
 				66FF7A7E22EA055900CC7243 /* PersonalityTest_PersonalityQuizViewControllerTest.swift */,
+				668712DD22F03E7E0042B46D /* PersonalityTest_PopoverContentViewControllerTest.swift */,
+				668712DF22F043640042B46D /* PersonalityTest_ChoiceTableViewCellTest.swift */,
+				668712E122F04BC70042B46D /* PersonalityTest_QuestionAnswerTableViewCellTest.swift */,
+				66C719ED22F0CD390043814F /* PersonalityTest_AnswerTest.swift */,
+				66C719EF22F0CF470043814F /* PersonalityTest_ConditionalQuestionViewTest.swift */,
+				66C719F122F0DADD0043814F /* PersonalityTest_QuestionTest.swift */,
+				66C719F322F0DFBD0043814F /* PersonalityTest_QuestionListTest.swift */,
+				6665F6CA22F1673F00BBBA6A /* PersonalityTest_OptionTest.swift */,
+				6665F6CC22F1685E00BBBA6A /* PersonalityTest_QuestionTypeTest.swift */,
+				6665F6CE22F16F1E00BBBA6A /* PersonalityTest_PersonalityQuizQuestionListViewModelTest.swift */,
+				6665F6D322F1921500BBBA6A /* PersonalityTest_NetworkUtilityTest.swift */,
 			);
 			path = PersonalityTestTests;
+			sourceTree = "<group>";
+		};
+		6665F6D022F18F0500BBBA6A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6665F6D122F18F2200BBBA6A /* NetworkUtility.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		666B46ED22E3C22900AD874F /* Controller */ = {
@@ -197,31 +257,10 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		666B46F022E3C42800AD874F /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		666B46F122E3C42800AD874F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		666B46F222E3C42800AD874F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		666B46F322E3C43000AD874F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				6640913822E4E38C00BA92BE /* PersonalityQuizViewModel.swift */,
+				66B76E0422ED8701000BB374 /* PersonalityQuizQuestionListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -229,7 +268,10 @@
 		666B46F422E3C43000AD874F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6640913622E4E35C00BA92BE /* PersonalityQuizModel.swift */,
+				6640913622E4E35C00BA92BE /* Question.swift */,
+				6677254922ECE55700FA1F80 /* QuestionList.swift */,
+				66B76DFF22ED7EA0000BB374 /* PersonalityQuizDataManager.swift */,
+				66B76E0822ED9ABE000BB374 /* Answer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,13 +309,13 @@
 		667EA2B122E06AA9007BEF5E /* PersonalityTest */ = {
 			isa = PBXGroup;
 			children = (
+				6665F6D022F18F0500BBBA6A /* Utility */,
+				66B76E0A22EDAFDC000BB374 /* Reusable ViewController */,
 				66401B4B22E42E6F0074C5F2 /* Enums */,
 				66401B4822E42DA90074C5F2 /* Extensions */,
 				667EA2EB22E07647007BEF5E /* Reusable Views */,
 				667EA2E822E073A7007BEF5E /* Firebase */,
 				667EA2E722E07396007BEF5E /* Modules */,
-				667EA2E622E07338007BEF5E /* Network Classes */,
-				667EA2E522E07335007BEF5E /* Utility Classes */,
 				667EA2B222E06AA9007BEF5E /* AppDelegate.swift */,
 				667EA2B622E06AA9007BEF5E /* Main.storyboard */,
 				667EA2B922E06AAA007BEF5E /* Assets.xcassets */,
@@ -306,9 +348,6 @@
 			isa = PBXGroup;
 			children = (
 				666B46EF22E3C42800AD874F /* Controller */,
-				666B46F122E3C42800AD874F /* Model */,
-				666B46F222E3C42800AD874F /* View */,
-				666B46F022E3C42800AD874F /* ViewModel */,
 			);
 			path = "Login Screen";
 			sourceTree = "<group>";
@@ -319,20 +358,6 @@
 				666B46ED22E3C22900AD874F /* Controller */,
 			);
 			path = "Splash Screen";
-			sourceTree = "<group>";
-		};
-		667EA2E522E07335007BEF5E /* Utility Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Utility Classes";
-			sourceTree = "<group>";
-		};
-		667EA2E622E07338007BEF5E /* Network Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Network Classes";
 			sourceTree = "<group>";
 		};
 		667EA2E722E07396007BEF5E /* Modules */ = {
@@ -370,10 +395,29 @@
 				66FF7A8622EA0D6700CC7243 /* TableView.xib */,
 				66A06FF922EB003100C98AA4 /* ConditionalQuestionView.swift */,
 				66A06FFB22EB004500C98AA4 /* ConditionalQuestionView.xib */,
+				6638A78C22EE292A006E9C6B /* CustomLabelView.swift */,
+				6638A78E22EE293F006E9C6B /* CustomLabelView.xib */,
 				66A06FFD22EB025A00C98AA4 /* ChoiceTableViewCell.swift */,
 				66A06FFE22EB025A00C98AA4 /* ChoiceTableViewCell.xib */,
 			);
 			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		668712E322F04DDB0042B46D /* Datamanager */ = {
+			isa = PBXGroup;
+			children = (
+				668712E422F04DF50042B46D /* questions.json */,
+				66C719F522F0E5430043814F /* PersonalityTest_DataManagerTest.swift */,
+			);
+			path = Datamanager;
+			sourceTree = "<group>";
+		};
+		66B76E0A22EDAFDC000BB374 /* Reusable ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				66B76E0622ED9745000BB374 /* PopoverContentViewController.swift */,
+			);
+			path = "Reusable ViewController";
 			sourceTree = "<group>";
 		};
 		784D756B184FFED3C5E14A90 /* Frameworks */ = {
@@ -511,6 +555,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				668712E522F04DF50042B46D /* questions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +575,7 @@
 				66401B4722E4297D0074C5F2 /* TextfieldView.xib in Resources */,
 				66A0700022EB025A00C98AA4 /* ChoiceTableViewCell.xib in Resources */,
 				66A06FFC22EB004500C98AA4 /* ConditionalQuestionView.xib in Resources */,
+				6638A78F22EE293F006E9C6B /* CustomLabelView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,13 +738,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C719F022F0CF470043814F /* PersonalityTest_ConditionalQuestionViewTest.swift in Sources */,
+				66C719EE22F0CD390043814F /* PersonalityTest_AnswerTest.swift in Sources */,
+				66C719F422F0DFBD0043814F /* PersonalityTest_QuestionListTest.swift in Sources */,
+				6665F6CF22F16F1E00BBBA6A /* PersonalityTest_PersonalityQuizQuestionListViewModelTest.swift in Sources */,
+				66C719F222F0DADD0043814F /* PersonalityTest_QuestionTest.swift in Sources */,
 				66401BAD22E4AFCD0074C5F2 /* PersonalityTest_EnumsTest.swift in Sources */,
+				66C719F622F0E5430043814F /* PersonalityTest_DataManagerTest.swift in Sources */,
+				6665F6CD22F1685E00BBBA6A /* PersonalityTest_QuestionTypeTest.swift in Sources */,
+				668712E022F043640042B46D /* PersonalityTest_ChoiceTableViewCellTest.swift in Sources */,
 				66401BAB22E4A9460074C5F2 /* PersonalityTest_ReusableViewsTest.swift in Sources */,
+				6665F6D422F1921500BBBA6A /* PersonalityTest_NetworkUtilityTest.swift in Sources */,
 				66401BA722E4A4600074C5F2 /* PersonalityTest_SplashViewControllerTest.swift in Sources */,
+				668712E222F04BC70042B46D /* PersonalityTest_QuestionAnswerTableViewCellTest.swift in Sources */,
+				6665F6CB22F1673F00BBBA6A /* PersonalityTest_OptionTest.swift in Sources */,
 				66401B9F22E4A4400074C5F2 /* PersonalityTestTests.swift in Sources */,
 				66FF7A7F22EA055900CC7243 /* PersonalityTest_PersonalityQuizViewControllerTest.swift in Sources */,
 				66401BA922E4A5970074C5F2 /* PersonalityTest_LoginViewControllerTest.swift in Sources */,
 				66FF7A7D22E9FCB500CC7243 /* PersonalityTest_ExtensionsTest.swift in Sources */,
+				668712DE22F03E7E0042B46D /* PersonalityTest_PopoverContentViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,17 +766,23 @@
 			files = (
 				6640913522E4E34600BA92BE /* PersonalityQuizViewController.swift in Sources */,
 				66A06FFA22EB003100C98AA4 /* ConditionalQuestionView.swift in Sources */,
+				66B76E0722ED9745000BB374 /* PopoverContentViewController.swift in Sources */,
 				66A06FFF22EB025A00C98AA4 /* ChoiceTableViewCell.swift in Sources */,
 				66401B4A22E42DBA0074C5F2 /* Extensions.swift in Sources */,
 				66401B4322E425EF0074C5F2 /* LoginViewController.swift in Sources */,
 				66FF7A8522EA0D3300CC7243 /* TableView.swift in Sources */,
+				66B76E0922ED9ABE000BB374 /* Answer.swift in Sources */,
+				6638A78D22EE292A006E9C6B /* CustomLabelView.swift in Sources */,
+				66B76E0522ED8702000BB374 /* PersonalityQuizQuestionListViewModel.swift in Sources */,
 				667EA2B522E06AA9007BEF5E /* SplashViewController.swift in Sources */,
-				6640913922E4E38C00BA92BE /* PersonalityQuizViewModel.swift in Sources */,
+				66B76E0022ED7EA0000BB374 /* PersonalityQuizDataManager.swift in Sources */,
 				66401B4522E4294F0074C5F2 /* TextfieldView.swift in Sources */,
-				6640913722E4E35C00BA92BE /* PersonalityQuizModel.swift in Sources */,
+				6640913722E4E35C00BA92BE /* Question.swift in Sources */,
+				6665F6D222F18F2200BBBA6A /* NetworkUtility.swift in Sources */,
 				66FF7A8222EA093700CC7243 /* QuestionAnswerTableViewCell.swift in Sources */,
 				66401B4D22E42E830074C5F2 /* Enums.swift in Sources */,
 				6641C66E22E5A506005CA44D /* AlertView.swift in Sources */,
+				6677254A22ECE55700FA1F80 /* QuestionList.swift in Sources */,
 				667EA2B322E06AA9007BEF5E /* AppDelegate.swift in Sources */,
 				66401B5622E45C2C0074C5F2 /* LoadingAnimationView.swift in Sources */,
 				66401B4F22E44DAA0074C5F2 /* ButtonView.swift in Sources */,
@@ -938,7 +1002,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf.sparks.network;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -957,7 +1021,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.binary.leaf.sparks.network;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

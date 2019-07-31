@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>500647872743-td197ldgelrmurrihjce1jngl38eu3sj.apps.googleusercontent.com</string>
+	<string>104356860166-486iko04lr3i72cg4fag0a35jjch8406.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.500647872743-td197ldgelrmurrihjce1jngl38eu3sj</string>
+	<string>com.googleusercontent.apps.104356860166-486iko04lr3i72cg4fag0a35jjch8406</string>
 	<key>API_KEY</key>
-	<string>AIzaSyC4t53pn-m703s9OI8Z-3ybF_0N2wPdSgw</string>
+	<string>AIzaSyCJFoHsmEzxkHUOsvNOdz1fafqWfKwPdAM</string>
 	<key>GCM_SENDER_ID</key>
-	<string>500647872743</string>
+	<string>104356860166</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.binary.leaf</string>
+	<string>com.binary.leaf.sparks.network</string>
 	<key>PROJECT_ID</key>
-	<string>personalitytest-15682</string>
+	<string>personalitytest-e68d0</string>
 	<key>STORAGE_BUCKET</key>
-	<string>personalitytest-15682.appspot.com</string>
+	<string>personalitytest-e68d0.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:500647872743:ios:4c312a589bd9761b</string>
+	<string>1:104356860166:ios:8900b6e8accd86e3</string>
 	<key>DATABASE_URL</key>
-	<string>https://personalitytest-15682.firebaseio.com</string>
+	<string>https://personalitytest-e68d0.firebaseio.com</string>
 </dict>
 </plist>

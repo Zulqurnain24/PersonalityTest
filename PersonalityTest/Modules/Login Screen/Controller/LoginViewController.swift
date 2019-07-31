@@ -11,6 +11,7 @@ import Firebase
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var personalityQuizButtonViewHolder: UIView!
     @IBOutlet weak var forgetPasswordButtonHolder: UIView!
     @IBOutlet weak var signUpButtonHolderView: UIView!
     @IBOutlet weak var loginButtonHolderView: UIView!
@@ -24,6 +25,7 @@ class LoginViewController: UIViewController {
     let loginButtonView = Bundle.main.loadNibNamed(Nibs.buttonView.rawValue, owner: self, options: nil)?.last as! ButtonView
     let signupButtonView = Bundle.main.loadNibNamed(Nibs.buttonView.rawValue, owner: self, options: nil)?.last as! ButtonView
     let logOutButtonView = Bundle.main.loadNibNamed(Nibs.buttonView.rawValue, owner: self, options: nil)?.last as! ButtonView
+    let personalityQuizButtonView = Bundle.main.loadNibNamed(Nibs.buttonView.rawValue, owner: self, options: nil)?.last as! ButtonView
     let alertView = Bundle.main.loadNibNamed(Nibs.alertView.rawValue, owner: self, options: nil)?.last as! AlertView
     
     var handle: AuthStateDidChangeListenerHandle!
@@ -32,10 +34,11 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         setupViews()
-        hideKeyboardWhenTappedAround() 
+        hideKeyboardWhenTappedAround()
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         checkIfUserIsLoggedIn()
     }
     
@@ -86,6 +89,12 @@ class LoginViewController: UIViewController {
             self.logOutTapped()
         }
         logOutButtonHolderView.addSubview(logOutButtonView)
+        
+        personalityQuizButtonView.configure(title: StringConstants.personalityQuizButtonView.rawValue, withAccessibilityIdentifier: AccessibilityIdentifier.personalityQuizButtonView.rawValue)
+        personalityQuizButtonView.buttonCallback = {
+            self.performSegueTo(route: Route.segueToPersonalityTest)
+        }
+        personalityQuizButtonViewHolder.addSubview(personalityQuizButtonView)
     }
     
     func updateUI(isLoggedIn: Bool) {
@@ -101,6 +110,7 @@ class LoginViewController: UIViewController {
             signupButtonView.isHidden = false
             logOutButtonView.isHidden = true
             alertView.isHidden = false
+            personalityQuizButtonView.isHidden = true
             return
         }
         
@@ -111,6 +121,7 @@ class LoginViewController: UIViewController {
         signupButtonView.isHidden = true
         logOutButtonView.isHidden = false
         alertView.isHidden = true
+        personalityQuizButtonView.isHidden = false
     }
     
     func performSegueTo(route: Route) {
@@ -118,7 +129,10 @@ class LoginViewController: UIViewController {
     }
 
     func signUpTapped() {
-        guard let emailText = emailTextfieldView.textField.text as String?, let passwordText = passwordTextfieldView.textField.text as String? else { return }
+        guard let emailText = emailTextfieldView.textField.text as String?, let passwordText = passwordTextfieldView.textField.text as String?, NetworkUtility.shared.isConnectedToInternet() else {
+                self.alertView.setText(StringConstants.noConnectionToInternet.rawValue)
+                self.alertView.showAlert()
+            return }
         Auth.auth().createUser(withEmail: emailText, password: passwordText) { user, error in
            
             guard error == nil && user != nil else {
@@ -131,11 +145,15 @@ class LoginViewController: UIViewController {
     }
     
     func loginTapped() {
-        guard let emailText = emailTextfieldView.textField.text as String?, let passwordText = passwordTextfieldView.textField.text as String? else { return }
+        
+        guard let emailText = emailTextfieldView.textField.text as String?, let passwordText = passwordTextfieldView.textField.text as String?, NetworkUtility.shared.isConnectedToInternet() else {
+                self.alertView.setText(StringConstants.noConnectionToInternet.rawValue)
+                self.alertView.showAlert()
+            return }
         Auth.auth().signIn(withEmail: emailText, password: passwordText) { [weak self] user, error in
-           
+
             guard error == nil else {
-                self?.alertView.setText(StringConstants.wrongLoginCredentials.rawValue)
+                self?.alertView.setText( StringConstants.wrongLoginCredentials.rawValue)
                 self?.alertView.showAlert()
                 return
             }
@@ -144,7 +162,10 @@ class LoginViewController: UIViewController {
     }
     
     func forgotPasswordTapped() {
-        guard let emailText = emailTextfieldView.textField.text as String? else { return }
+        guard let emailText = emailTextfieldView.textField.text as String?, NetworkUtility.shared.isConnectedToInternet() else {
+                self.alertView.setText(StringConstants.noConnectionToInternet.rawValue)
+                self.alertView.showAlert()
+            return }
         Auth.auth().sendPasswordReset(withEmail: emailText, completion: { error in
             
             guard error == nil else {
@@ -156,6 +177,10 @@ class LoginViewController: UIViewController {
     }
     
     func logOutTapped() {
+       guard NetworkUtility.shared.isConnectedToInternet() else {
+            self.alertView.setText(StringConstants.noConnectionToInternet.rawValue)
+            self.alertView.showAlert()
+            return }
         do {
             try Auth.auth().signOut()
             updateUI(isLoggedIn: false)

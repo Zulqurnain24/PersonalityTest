@@ -13,51 +13,95 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ConditionalQuestionView" customModule="PersonalityTest" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="327" height="315"/>
+            <rect key="frame" x="0.0" y="0.0" width="350" height="427"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wja-O1-xXY">
-                    <rect key="frame" x="0.0" y="0.0" width="327" height="315"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zt-ef-KJf">
+                    <rect key="frame" x="0.0" y="0.0" width="350" height="427"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdD-K1-gfz">
-                            <rect key="frame" x="0.0" y="0.0" width="327" height="153"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cbk-wp-rmd">
+                            <rect key="frame" x="213" y="98" width="139" height="246"/>
+                            <color key="backgroundColor" red="0.50104477150000004" green="0.74888150190000002" blue="0.76827083330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="246" id="A9m-B6-yL3"/>
+                                <constraint firstAttribute="width" constant="139" id="Qc3-si-z57"/>
+                            </constraints>
+                        </pickerView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ut-GV-IQp">
+                            <rect key="frame" x="134.5" y="98" width="81" height="246"/>
+                            <color key="backgroundColor" red="0.50104477150000004" green="0.74888150190000002" blue="0.76827083330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="81" id="HKS-ke-E7f"/>
+                                <constraint firstAttribute="height" constant="246" id="lg8-xb-2Ca"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cc9-Gb-ymp">
+                            <rect key="frame" x="-2" y="98" width="139" height="246"/>
+                            <color key="backgroundColor" red="0.50104477150000004" green="0.74888150190000002" blue="0.76827083330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="139" id="VA5-fs-EDM"/>
+                                <constraint firstAttribute="height" constant="246" id="cNf-zx-BDa"/>
+                            </constraints>
+                        </pickerView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdD-K1-gfz">
+                            <rect key="frame" x="0.0" y="0.0" width="352" height="99"/>
                             <color key="backgroundColor" red="0.50104477150000004" green="0.74888150190000002" blue="0.76827083330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <color key="tintColor" red="0.50104477150000004" green="0.74888150190000002" blue="0.76827083330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="99" id="Uvf-ur-MPa"/>
+                                <constraint firstAttribute="width" constant="352" id="rqX-zY-UvC"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cc9-Gb-ymp">
-                            <rect key="frame" x="0.0" y="153" width="128" height="162"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qA-Tr-QaO">
+                            <rect key="frame" x="0.0" y="343" width="350" height="84"/>
                             <color key="backgroundColor" red="0.50104477150000004" green="0.74888150190000002" blue="0.76827083330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </pickerView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ut-GV-IQp">
-                            <rect key="frame" x="127" y="153" width="74" height="162"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.50104477150000004" green="0.74888150190000002" blue="0.76827083330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cbk-wp-rmd">
-                            <rect key="frame" x="199" y="153" width="128" height="162"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.50104477150000004" green="0.74888150190000002" blue="0.76827083330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </pickerView>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="84" id="bvK-oZ-acG"/>
+                                <constraint firstAttribute="width" constant="350" id="e5v-mt-9X5"/>
+                            </constraints>
+                        </view>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.50104477150000004" green="0.74888150190000002" blue="0.76827083330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1ut-GV-IQp" firstAttribute="height" secondItem="cc9-Gb-ymp" secondAttribute="height" id="1CK-qt-RRR"/>
+                        <constraint firstItem="Cbk-wp-rmd" firstAttribute="height" secondItem="cc9-Gb-ymp" secondAttribute="height" id="1nT-b0-ea3"/>
+                        <constraint firstItem="Cbk-wp-rmd" firstAttribute="top" secondItem="1zt-ef-KJf" secondAttribute="top" constant="98" id="2CM-o5-zvm"/>
+                        <constraint firstItem="1ut-GV-IQp" firstAttribute="leading" secondItem="1zt-ef-KJf" secondAttribute="leading" constant="134.5" id="8pJ-dQ-Xc0"/>
+                        <constraint firstAttribute="bottom" secondItem="1ut-GV-IQp" secondAttribute="bottom" constant="83" id="BP8-38-ukk"/>
+                        <constraint firstAttribute="trailing" secondItem="Cbk-wp-rmd" secondAttribute="trailing" constant="-2" id="BuX-Sx-L0n"/>
+                        <constraint firstItem="Cbk-wp-rmd" firstAttribute="width" secondItem="cc9-Gb-ymp" secondAttribute="width" id="CQq-2Q-U7c"/>
+                        <constraint firstItem="PdD-K1-gfz" firstAttribute="top" secondItem="1zt-ef-KJf" secondAttribute="top" id="IfW-Ma-1O7"/>
+                        <constraint firstAttribute="bottom" secondItem="1qA-Tr-QaO" secondAttribute="bottom" id="JTj-b3-T8b"/>
+                        <constraint firstItem="Cbk-wp-rmd" firstAttribute="leading" secondItem="cc9-Gb-ymp" secondAttribute="trailing" constant="76" id="RkG-Uh-WOW"/>
+                        <constraint firstItem="1qA-Tr-QaO" firstAttribute="top" secondItem="1zt-ef-KJf" secondAttribute="top" constant="343" id="YGK-Qt-64m"/>
+                        <constraint firstItem="cc9-Gb-ymp" firstAttribute="top" secondItem="1zt-ef-KJf" secondAttribute="top" constant="98" id="b70-5c-UEF"/>
+                        <constraint firstAttribute="bottom" secondItem="Cbk-wp-rmd" secondAttribute="bottom" constant="83" id="bOY-up-X0M"/>
+                        <constraint firstItem="PdD-K1-gfz" firstAttribute="leading" secondItem="1zt-ef-KJf" secondAttribute="leading" id="haK-4t-P6E"/>
+                        <constraint firstItem="PdD-K1-gfz" firstAttribute="centerX" secondItem="1zt-ef-KJf" secondAttribute="centerX" constant="1" id="lLT-Dk-aos"/>
+                        <constraint firstItem="1qA-Tr-QaO" firstAttribute="centerX" secondItem="1zt-ef-KJf" secondAttribute="centerX" id="mHA-OD-BIo"/>
+                        <constraint firstItem="1qA-Tr-QaO" firstAttribute="leading" secondItem="1zt-ef-KJf" secondAttribute="leading" id="rVX-lu-XBV"/>
+                        <constraint firstItem="1ut-GV-IQp" firstAttribute="top" secondItem="1zt-ef-KJf" secondAttribute="top" constant="98" id="uRl-pG-euK"/>
+                        <constraint firstAttribute="trailing" secondItem="1ut-GV-IQp" secondAttribute="trailing" constant="134.5" id="xih-Lq-RZZ"/>
+                        <constraint firstAttribute="bottom" secondItem="cc9-Gb-ymp" secondAttribute="bottom" constant="83" id="xyD-tp-Ukm"/>
+                        <constraint firstItem="cc9-Gb-ymp" firstAttribute="leading" secondItem="1zt-ef-KJf" secondAttribute="leading" constant="-2" id="y2G-2B-RHd"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="wja-O1-xXY" secondAttribute="bottom" id="T7F-pf-zUs"/>
-                <constraint firstItem="wja-O1-xXY" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="a0l-48-jfF"/>
-                <constraint firstItem="wja-O1-xXY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cMe-St-8k8"/>
-                <constraint firstItem="wja-O1-xXY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="odK-vU-ndH"/>
+                <constraint firstAttribute="bottom" secondItem="1zt-ef-KJf" secondAttribute="bottom" id="5WS-p7-plJ"/>
+                <constraint firstItem="1zt-ef-KJf" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Ofa-x8-fEh"/>
+                <constraint firstItem="1zt-ef-KJf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Xyj-NR-s6d"/>
+                <constraint firstItem="1zt-ef-KJf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tek-T0-lrg"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
@@ -66,8 +110,9 @@
                 <outlet property="inBetweenTextLabel" destination="1ut-GV-IQp" id="jzi-rW-xDa"/>
                 <outlet property="maxRangePicker" destination="Cbk-wp-rmd" id="VRh-IN-XFc"/>
                 <outlet property="minRangePicker" destination="cc9-Gb-ymp" id="c8A-jw-spx"/>
+                <outlet property="submitButtonViewHolder" destination="1qA-Tr-QaO" id="kbT-kC-DOn"/>
             </connections>
-            <point key="canvasLocation" x="-28.260869565217394" y="-159.70982142857142"/>
+            <point key="canvasLocation" x="-359.4202898550725" y="-73.995535714285708"/>
         </view>
     </objects>
 </document>
