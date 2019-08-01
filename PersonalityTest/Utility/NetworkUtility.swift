@@ -1,5 +1,5 @@
 //
-//  Utility.swift
+//  NetworkUtility.swift
 //  PersonalityTest
 //
 //  Created by Mohammad Zulqarnain on 31/07/2019.

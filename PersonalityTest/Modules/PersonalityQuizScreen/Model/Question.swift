@@ -19,6 +19,8 @@ struct IfPositive: Codable {
     var category: QuestionCategory
     var question_type: Type
 }
+
+//IfPositive Struct
 extension IfPositive: Equatable {
     static func == (lhs: IfPositive, rhs: IfPositive) -> Bool {
         return lhs.category == rhs.category
@@ -33,7 +35,7 @@ struct Type: Codable {
     var range: Dictionary<String, Int>
 }
 
-//Option type for selection
+//Option struct
 struct Option: Codable {
     let name: String
     var isSelected: Bool
