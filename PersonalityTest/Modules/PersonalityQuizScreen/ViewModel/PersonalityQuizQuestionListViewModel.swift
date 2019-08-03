@@ -28,6 +28,10 @@ extension PersonalityQuizQuestionListViewModel {
         })
     }
     
+    mutating func setQuestions(questions: [Question]) {
+        questionList = QuestionList(questions: questions)
+    }
+    
     func getQuestions() -> [Question] {
         guard let questionList = questionList else { return [] }
         return questionList.questions

@@ -59,6 +59,75 @@ class PersonalityTest_PersonalityQuizQuestionListViewModelTest: XCTestCase {
         self.sut.setSelectedOption(questionNumber: 0, value: 2)
         XCTAssertEqual(self.sut.getQuestions()[0].question_type.selectedOption, 2)
         
+        self.sut.setQuestions(questions: [
+            Question(question: "How important is the gender of your partner?", category: QuestionCategory.hard_fact, question_type: QuestionType(type: "single_choice", options: [
+                "not important",
+                "important",
+                "very important"
+                ], condition: Condition(predicate: Predicate(exactEquals: [
+                    "${selection}",
+                    "very important"
+                    ]), if_positive: IfPositive(question: "", category: QuestionCategory.hard_fact, question_type: Type(type: "", range: Dictionary<String, Int>()))), selectedOption: 0)),
+            Question(question: "Do any children under the age of 18 live with you?", category: QuestionCategory.hard_fact, question_type: QuestionType(type: "single_choice", options: [
+                "not important",
+                "important",
+                "very important"
+                ], condition: Condition(predicate: Predicate(exactEquals: [
+                    "",
+                    ""
+                    ]), if_positive: IfPositive(question: "", category: QuestionCategory.hard_fact, question_type: Type(type: "", range: Dictionary<String, Int>()))), selectedOption: 0)),
+            Question(question: "How should your potential partner respond to this question?", category: QuestionCategory.lifestyle, question_type: QuestionType(type: "single_choice", options: [
+                "yes",
+                "sometimes",
+                "no"
+                ], condition: Condition(predicate: Predicate(exactEquals: [
+                    "",
+                    ""
+                    ]), if_positive: IfPositive(question: "", category: QuestionCategory.hard_fact, question_type: Type(type: "", range: Dictionary<String, Int>()))), selectedOption: 0)),
+            Question(question: "Could you imagine having children with your potential partner?", category: QuestionCategory.lifestyle, question_type: QuestionType(type: "single_choice", options: [
+                "yes",
+                "maybe",
+                "no"
+                ], condition: Condition(predicate: Predicate(exactEquals: [
+                    "",
+                    ""
+                    ]), if_positive: IfPositive(question: "", category: QuestionCategory.hard_fact, question_type: Type(type: "", range: Dictionary<String, Int>()))), selectedOption: 0))
+            ])
+        XCTAssertEqual(self.sut.getQuestions(), [
+            Question(question: "How important is the gender of your partner?", category: QuestionCategory.hard_fact, question_type: QuestionType(type: "single_choice", options: [
+                "not important",
+                "important",
+                "very important"
+                ], condition: Condition(predicate: Predicate(exactEquals: [
+                    "${selection}",
+                    "very important"
+                    ]), if_positive: IfPositive(question: "", category: QuestionCategory.hard_fact, question_type: Type(type: "", range: Dictionary<String, Int>()))), selectedOption: 0)),
+            Question(question: "Do any children under the age of 18 live with you?", category: QuestionCategory.hard_fact, question_type: QuestionType(type: "single_choice", options: [
+                "not important",
+                "important",
+                "very important"
+                ], condition: Condition(predicate: Predicate(exactEquals: [
+                    "",
+                    ""
+                    ]), if_positive: IfPositive(question: "", category: QuestionCategory.hard_fact, question_type: Type(type: "", range: Dictionary<String, Int>()))), selectedOption: 0)),
+            Question(question: "How should your potential partner respond to this question?", category: QuestionCategory.lifestyle, question_type: QuestionType(type: "single_choice", options: [
+                "yes",
+                "sometimes",
+                "no"
+                ], condition: Condition(predicate: Predicate(exactEquals: [
+                    "",
+                    ""
+                    ]), if_positive: IfPositive(question: "", category: QuestionCategory.hard_fact, question_type: Type(type: "", range: Dictionary<String, Int>()))), selectedOption: 0)),
+            Question(question: "Could you imagine having children with your potential partner?", category: QuestionCategory.lifestyle, question_type: QuestionType(type: "single_choice", options: [
+                "yes",
+                "maybe",
+                "no"
+                ], condition: Condition(predicate: Predicate(exactEquals: [
+                    "",
+                    ""
+                    ]), if_positive: IfPositive(question: "", category: QuestionCategory.hard_fact, question_type: Type(type: "", range: Dictionary<String, Int>()))), selectedOption: 0))
+            ])
+        
     }
 
     func testPerformanceExample() {

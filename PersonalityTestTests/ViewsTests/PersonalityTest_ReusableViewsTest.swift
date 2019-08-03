@@ -29,9 +29,7 @@ class PersonalityTest_ReusableViewsTest: XCTestCase {
         sut3?.initiateAnimation()
         
         sut4.awakeFromNib()
-        sut4.setText(StringConstants.wrongSignUpCredentials.rawValue)
-        sut4.showAlert()
-        sut4.okTapped(sut4.okButton!)
+   
     }
     
     override func tearDown() {
@@ -55,6 +53,10 @@ class PersonalityTest_ReusableViewsTest: XCTestCase {
         
         sut3?.initiateAnimation()
         sut3?.populateImagesInArray()
+        
+        sut4.setText(StringConstants.wrongSignUpCredentials.rawValue)
+        sut4.showAlert()
+        sut4.okTapped(sut4.okButton!)
     }
     
     func testPerformanceExample() {

@@ -189,11 +189,3 @@ class LoginViewController: UIViewController {
         }
     }
 }
-
-extension LoginViewController: AuthUIDelegate {
-    
-    override func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
-
-        performSegueTo(route: Route.segueToPersonalityTest)
-    }
-}

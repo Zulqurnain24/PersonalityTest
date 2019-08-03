@@ -31,6 +31,16 @@ class PersonalityTest_PopoverContentViewControllerTest: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         sut.viewDidLoad()
         sut.setupViews()
+        sut.conditionalQuestionView.awakeFromNib()
+        sut.conditionalQuestionView.setRangeArray()
+        sut.conditionalQuestionView.setupViews()
+        sut.conditionalQuestionView.configure(questionNumber: 0, questionString: "How important is the age of your partner to you?", range: NSRange(location: 20, length: 4), withAccessibilityIdentifier: AccessibilityIdentifier.conditionalQuestionView.rawValue)
+        let _ = sut.conditionalQuestionView.numberOfComponents(in: sut.conditionalQuestionView.minRangePicker)
+        let _ = sut.conditionalQuestionView.numberOfComponents(in: sut.conditionalQuestionView.maxRangePicker)
+        let _ = sut.conditionalQuestionView.pickerView(sut.conditionalQuestionView.minRangePicker, numberOfRowsInComponent: 0)
+        let _ = sut.conditionalQuestionView.pickerView(sut.conditionalQuestionView.maxRangePicker, numberOfRowsInComponent: 0)
+   sut.conditionalQuestionView.pickerView(sut.conditionalQuestionView.minRangePicker, didSelectRow: 0, inComponent: 0)
+        sut.conditionalQuestionView.pickerView(sut.conditionalQuestionView.maxRangePicker, didSelectRow: 0, inComponent: 0)
         XCTAssertEqual(sut.title, StringConstants.popoverContentViewControllerTitle.rawValue)
         XCTAssertEqual(sut.view.accessibilityIdentifier, AccessibilityIdentifier.popoverContentViewController.rawValue)
     }

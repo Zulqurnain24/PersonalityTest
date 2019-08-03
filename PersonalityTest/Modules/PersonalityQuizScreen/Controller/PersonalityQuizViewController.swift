@@ -71,10 +71,10 @@ class PersonalityQuizViewController: UIViewController {
 }
 
 extension PersonalityQuizViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        guard let personalityQuizViewModel = self.personalityQuizQuestionListViewModel as PersonalityQuizQuestionListViewModel?, let totalOptions = personalityQuizViewModel.getQuestions()[indexPath.row].question_type.options?.count as Int? else { return 0 }
-        return CGFloat(117 + totalOptions * 44)
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        guard let personalityQuizViewModel = self.personalityQuizQuestionListViewModel as PersonalityQuizQuestionListViewModel?, !personalityQuizViewModel.getQuestions().isEmpty, let totalOptions = personalityQuizViewModel.getQuestions()[indexPath.row].question_type.options?.count as Int? else { return 0 }
+//        return CGFloat(117 + totalOptions * 44)
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let personalityQuizViewModel = self.personalityQuizQuestionListViewModel as PersonalityQuizQuestionListViewModel? else { return 0 }
@@ -90,7 +90,8 @@ extension PersonalityQuizViewController: UITableViewDelegate, UITableViewDataSou
         questionAnswerTableViewCell.prepareForReuse()
         questionAnswerTableViewCell.delegate = self
         
-        guard let questions =  personalityQuizQuestionListViewModel.getQuestions() as [Question]? else { return UITableViewCell()}
+        guard let questions =  personalityQuizQuestionListViewModel.getQuestions() as [Question]?,
+              indexPath.row < personalityQuizQuestionListViewModel.getQuestions().count else { return UITableViewCell()}
 
         questionAnswerTableViewCell.populate(questionNumber: indexPath.row, question: questions[indexPath.row])
         return questionAnswerTableViewCell

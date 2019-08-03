@@ -55,6 +55,13 @@ class PersonalityTest_LoginViewControllerTest: XCTestCase {
         sut.forgotPasswordTapped()
         sut.performSegueTo(route: Route.segueToPersonalityTest)
         sut.viewWillDisappear(true)
+        
+        sut.emailTextfieldView.textField.text = "zulqurnain@gmail.com"
+        sut.emailTextfieldView.handleTextChange()
+        XCTAssertEqual(sut.emailTextfieldView.textField.text, "zulqurnain@gmail.com")
+        sut.passwordTextfieldView.textField.text = "Cucumber786!"
+        sut.passwordTextfieldView.handleTextChange()
+        XCTAssertEqual(sut.passwordTextfieldView.textField.text, "Cucumber786!")
     }
     
     func testPerformanceExample() {
